@@ -41,7 +41,7 @@ class Robot extends Enemy{
 				firelaser(player);
 			}else{
 				timer++;
-				println(timer);
+				//println(timer);
 			}
 			if(timer/180 == 1){
 				fired = false;
@@ -80,7 +80,7 @@ class Robot extends Enemy{
 		
 	}
 	void firelaser(Player player){
-		println("fire");
+		//println("fire");
 		laser = new Laser();
 		if(direction == RIGHT){
 			laser.fire(this.x + HAND_OFFSET_X_FORWARD, this.y + HAND_OFFSET_Y, player.x + player.w/2 , player.y + player.h/2);
