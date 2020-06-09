@@ -14,6 +14,7 @@ class Enemy {
 
 	void display(){}
 	void update(){}
+	void detectPlayer(Player player){}
 
 	Enemy(float x, float y){
 		this.x = x;
